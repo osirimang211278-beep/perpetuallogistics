@@ -1,0 +1,137 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    color: #333;
+}
+
+/* LANDING */
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    background: white;
+    color: #0047ab;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* FORM SECTION */
+.form-section {
+    display: none;
+    padding: 60px 20px;
+}
+
+/* FORM CARD (PREMIUM LOOK) */
+form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* FORM TITLE */
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0047ab;
+}
+
+/* INPUTS */
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 500;
+} 
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #0047ab;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 71, 171, 0.3);
+}
+
+/* SUBMIT BUTTON */
+form button {
+    margin-top: 25px;
+    width: 100%;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+}
+
+/* SUCCESS PAGE */
+.success-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+}
+
+.success-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.success-container h1 {
+    color: #00a859;
+}
+
+.success-container p {
+    margin-top: 10px;
+}

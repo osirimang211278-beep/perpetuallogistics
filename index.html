@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="b.png" width="24px" height="24px" loading="eager">
+
+    <title>Perpetual Logistics</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Landing Section -->
+     <div class="landing">
+        <img src="b.png" alt="Perpetual Logo" class="logo" width="200px" height="200px">
+        <h1>Perpetual Logistics</h1>
+        <button class="btn" id="startBtn">Get Started</button>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+        <form name="delivery-form" method="POST" data-netlify="true">
+
+            <!-- Netlify required -->
+            <input type="hidden" name="form-name" value="delivery-form">
+        
+            <!-- Redirect after submit -->
+            <input type="hidden" name="_redirect" value="success.html">
+        
+            <h2>Track Your Package</h2>
+        
+            <label>Name</label>
+            <input type="text" name="name" required>
+        
+            <label>Email</label>
+            <input type="email" name="email" required>
+        
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+        
+            <label>Tracking Number</label>
+            <input type="text" name="tracking" required>
+        
+            <button type="submit">Submit</button>
+        
+        </form>
+    </div>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
