@@ -1,0 +1,276 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    color: #333;
+}
+
+/* LANDING */
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    background: white;
+    color: #0047ab;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* FORM SECTION */
+.form-section {
+    display: none;
+    padding: 60px 20px;
+}
+
+/* FORM CARD (PREMIUM LOOK) */
+form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* FORM TITLE */
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0047ab;
+}
+
+/* INPUTS */
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 500;
+} 
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #0047ab;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 71, 171, 0.3);
+}
+
+/* SUBMIT BUTTON */
+form button {
+    margin-top: 25px;
+    width: 100%;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+}
+
+/* ANIMATION BASE */
+.landing,
+.form-section {
+    transition: all 0.6s ease;
+}
+
+/* HIDE LANDING (SLIDE UP) */
+.landing.hide {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+/* SHOW FORM (SLIDE IN) */
+.form-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.form-section.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* LOADING SPINNER */
+.loading {
+    display: none;
+    margin: 20px auto;
+    border: 5px solid #eee;
+    border-top: 5px solid #0047ab;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* TIMELINE */
+.timeline {
+    margin-top: 25px;
+    display: none;
+    text-align: left;
+}
+
+.timeline-step {
+    padding: 10px 0;
+    border-left: 3px solid #ccc;
+    margin-left: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.timeline-step::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 15px;
+}
+
+/* ACTIVE STEP */
+.timeline-step.active {
+    border-color: #00a859;
+}
+
+.timeline-step.active::before {
+    background: #00a859;
+}
+
+/* SHOW WHEN ACTIVE */
+.timeline.show {
+    display: block;
+}
+
+/* TRACKING PAGE */
+.tracking-page {
+    display: none;
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+    color: white;
+    transition: all 0.6s ease;
+}
+
+/* SHOW ANIMATION */
+.tracking-page.show {
+    display: block;
+    animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* SUCCESS PAGE 
+.success-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0047ab, #00a859);
+}
+
+.success-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.success-container h1 {
+    color: #00a859;
+}
+
+.success-container p {
+    margin-top: 10px;
+}  */
+
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* STATUS COLORS */
+.delivered {
+    background: #e6fff2;
+    color: #00a859;
+}
+
+.transit {
+    background: #e6f0ff;
+    color: #0047ab;
+}
+
+.pending {
+    background: #fff6e6;
+    color: #ff9800;
+}

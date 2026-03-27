@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpetual Logistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Landing -->
+    <div class="landing">
+        <img src="b.png" alt="Logo" class="logo">
+        <h1>Perpetual Logistics</h1>
+        <button class="btn" id="startBtn">Get Started</button>
+    </div>
+
+    <!-- Form -->
+    <div class="form-section">
+        <form>
+
+            <h2>Track Your Package</h2>
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
+
+            <label>Tracking Number</label>
+            <input type="text" name="tracking" required>
+
+            <button type="submit">Track Package</button>
+
+            <div id="loading" class="loading"></div>
+
+        </form>
+    </div>
+
+    <!-- Tracking Page -->
+    <div class="tracking-page" id="trackingPage">
+
+        <h2>📦 Shipment Status</h2>
+
+        <div id="resultBox" class="result-box">
+            3.
+        </div>
+        <div id="timeline" class="timeline"></div>
+
+        <button class="btn" id="backBtn">← Back</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
